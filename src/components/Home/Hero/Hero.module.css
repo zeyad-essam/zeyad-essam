@@ -200,6 +200,7 @@
 @media (max-width: 567px) {
   .hero {
     min-height: 600px;
+    padding-bottom: 35px;
   }
 
   .hero_inner {
