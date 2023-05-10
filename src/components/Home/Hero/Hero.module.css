@@ -140,6 +140,10 @@
 }
 
 @media (max-width: 1200px) {
+  .hero {
+    height: 700px;
+  }
+
   .hero_inner .hero_text h3 {
     font-size: 45px;
   }
@@ -159,6 +163,10 @@
 }
 
 @media (max-width: 991.8px) {
+  .hero {
+    height: 100vh;
+  }
+
   .hero_inner {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
@@ -194,8 +202,15 @@
     min-height: 600px;
   }
 
+  .hero_inner {
+    display: flex;
+    flex-direction: column;
+  }
+
   .hero_inner .hero_text {
-    padding: 40px 0 20px;
+    padding: 0;
+    height: 50%;
+    justify-content: center;
   }
 
   .hero_inner .hero_text h3 {
@@ -208,5 +223,13 @@
 
   .hero_inner .hero_text p {
     font-size: 16px;
+  }
+
+  .hero_inner .hero_image {
+    height: 50%;
+  }
+
+  .hero_inner .hero_image img {
+    object-position: top;
   }
 }
