@@ -1,0 +1,67 @@
+.pc_navigation {
+  flex: 0 0 auto;
+  width: auto;
+  height: 100%;
+}
+
+.pc_navigation ul {
+  display: flex;
+  height: 100%;
+}
+
+.pc_navigation ul li {
+  height: 100%;
+  padding: 0 23px;
+}
+
+.pc_navigation ul li a {
+  position: relative;
+  display: block;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.96rem;
+  font-weight: 500;
+  color: var(--text-color-light);
+}
+
+.pc_navigation ul li a::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  left: auto;
+  left: 50%;
+  width: 120px;
+  height: 60px;
+  background-image: url(/menu-hover-shape.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.pc_navigation ul li a:hover {
+  color: var(--text-color);
+  transition: all 0.5s ease;
+}
+
+.pc_navigation ul li a:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .pc_navigation ul li {
+    padding: 0 18px;
+  }
+}
+
+@media (max-width: 991.8px) {
+  .pc_navigation {
+    display: none;
+  }
+}

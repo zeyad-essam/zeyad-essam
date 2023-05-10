@@ -1,0 +1,148 @@
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #252734;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  animation: fadeInDown 0.9s cubic-bezier(0.2, 1, 0.22, 1);
+  backdrop-filter: blur(16px);
+  background: rgba(3, 0, 20, 0.7);
+}
+
+.header_inner {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .header.sticky .header_inner {
+    height: 100px;
+  }
+}
+
+.header_inner .logo_wrapper,
+.header_inner .hire_me {
+  flex: 1 0 0%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.header_inner .logo_wrapper a {
+  display: inline-flex;
+  width: 150px;
+}
+
+.header_inner .logo_wrapper a img {
+  max-width: 100%;
+}
+
+.header_inner .hire_me {
+  text-align: right;
+}
+
+.mobile_menu_button {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.mobile_menu_button:before,
+.mobile_menu_button:after {
+  display: block;
+  content: ".";
+  overflow: hidden;
+  text-indent: 200%;
+  white-space: nowrap;
+}
+
+.mobile_menu_button:before,
+.mobile_menu_button:after,
+.mobile_menu_button .toggle_bar {
+  width: 32px;
+  height: 2px;
+  margin-top: -2px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  background: #fff;
+  transition: all 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.mobile_menu_button:before {
+  transform: translateY(-10px);
+}
+.mobile_menu_button:after {
+  transform: translateY(10px);
+}
+
+.mobile_menu_button.active:before {
+  transform: rotate(45deg);
+}
+
+.mobile_menu_button.active::after {
+  transform: rotate(-45deg);
+}
+
+.mobile_menu_button.active .toggle_bar {
+  opacity: 0;
+}
+
+@media (min-width: 992px) {
+  .mobile_menu_button {
+    display: none;
+  }
+}
+
+@media (max-width: 991.8px) {
+  .header,
+  .header.sticky {
+    position: fixed !important;
+    animation: none;
+  }
+
+  .header_inner .hire_me {
+    display: none;
+  }
+
+  .header_inner .logo_wrapper {
+    padding: 0 5px;
+  }
+
+  .header_inner .logo_wrapper a {
+    width: 140px;
+  }
+}
+
+@media (max-width: 567px) {
+  .header_inner .logo_wrapper a {
+    width: 100px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
