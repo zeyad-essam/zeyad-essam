@@ -35,6 +35,11 @@
   max-width: 100%;
 }
 
+.header_inner .logo_wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .header_inner .logo_wrapper a {
   display: inline-flex;
   width: 150px;
@@ -74,7 +79,7 @@
 .mobile_menu_button:before,
 .mobile_menu_button:after,
 .mobile_menu_button .toggle_bar {
-  width: 32px;
+  width: 28px;
   height: 2px;
   margin-top: -2px;
   position: absolute;
@@ -85,10 +90,10 @@
 }
 
 .mobile_menu_button:before {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
 }
 .mobile_menu_button:after {
-  transform: translateY(10px);
+  transform: translateY(8px);
 }
 
 .mobile_menu_button.active:before {
