@@ -27,7 +27,7 @@ const Services = () => {
     },
     modules: [Pagination],
     breakpoints: {
-      767: {
+      768: {
         slidesPerView: 2,
       },
       1200: {
