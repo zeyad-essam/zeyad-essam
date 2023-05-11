@@ -1,0 +1,29 @@
+.section {
+  position: relative;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+/* @media (max-width: 1800px) {
+  .section {
+    padding: 125px 0;
+  }
+}
+
+@media (max-width: 1400px) {
+  .section {
+    padding: 105px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .section {
+    padding: 65px 0;
+  }
+}
+
+@media (max-width: 567px) {
+  .section {
+    padding: 50px 0;
+  }
+} */

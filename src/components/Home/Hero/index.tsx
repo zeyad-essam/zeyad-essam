@@ -11,7 +11,7 @@ import styles from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <div className={styles.hero}>
+    <section className={styles.hero}>
       <div className="container">
         <div className={styles.hero_inner}>
           <div className={styles.hero_text}>
@@ -49,7 +49,7 @@ const Hero = () => {
         <span></span>
         <span></span>
       </div>
-    </div>
+    </section>
   );
 };
 
