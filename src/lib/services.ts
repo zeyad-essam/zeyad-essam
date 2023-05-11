@@ -1,16 +1,5 @@
 export const services = [
   {
-    icon: "/icons/web-development.png",
-    title: "Web development",
-    list: [
-      "Custom web applications",
-      "Dynamic user interfaces",
-      "Next.js",
-      "API integration",
-      "Responsive design",
-    ],
-  },
-  {
     icon: "/icons/front-end-development.png",
     title: "Frontend development",
     list: ["HTML", "CSS", "JavaScript", "React", "Redux"],

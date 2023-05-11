@@ -6,7 +6,7 @@
   width: 100%;
   transform: translateX(100%);
   padding-top: var(--header-height);
-  background: rgba(6, 5, 34, 0.9);
+  background: rgba(3, 0, 20, 0.9);
   backdrop-filter: blur(12px);
   transition: transform 0.45s ease;
   z-index: 98;
