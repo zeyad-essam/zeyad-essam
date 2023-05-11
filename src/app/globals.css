@@ -27,9 +27,9 @@ body {
 }
 
 :root {
-  --main-color-dark: rgb(3, 0, 20);
-  --main-color-medium: rgba(3, 0, 20, 0.85);
-  --main-color-light: rgba(3, 0, 20, 0.8);
+  --main-color-dark: rgb(37, 39, 52);
+  --main-color-medium: rgb(39, 41, 54);
+  --main-color-light: rgb(42, 44, 57);
   --text-color: #f4f0ff;
   --text-color-light: #b8bac5;
   --border-color: rgba(255, 255, 255, 0.2);

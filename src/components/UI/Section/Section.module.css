@@ -4,6 +4,10 @@
   padding-bottom: var(--section-padding);
 }
 
+.section.dark {
+  background-color: var(--main-color-dark);
+}
+
 /* @media (max-width: 1800px) {
   .section {
     padding: 125px 0;

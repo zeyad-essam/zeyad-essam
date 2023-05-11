@@ -11,7 +11,7 @@
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   animation: fadeInDown 0.9s cubic-bezier(0.2, 1, 0.22, 1);
   backdrop-filter: blur(16px);
-  background: rgba(3, 0, 20, 0.7);
+  background: rgba(37, 39, 52, 0.7);
 }
 
 .header_inner {
