@@ -83,7 +83,7 @@
 
 .hero .hero_shape.hero_shape_bottom {
   bottom: -100px;
-  right: 0;
+  left: 0;
 }
 
 .hero .hero_shape span {
@@ -128,6 +128,11 @@
 
   .hero_image .image_wrapper {
     width: 90%;
+  }
+
+  .hero .hero_shape.hero_shape_bottom {
+    left: auto;
+    right: 0;
   }
 }
 

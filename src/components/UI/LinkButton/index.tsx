@@ -8,11 +8,13 @@ const LinkButton = ({
   href,
   onClick,
   size,
+  standard,
 }: {
   children: React.ReactNode;
   href?: string;
   onClick?: () => void;
   size?: "small" | "medium" | "large";
+  standard?: boolean;
 }) => {
   let sizeClass: string;
 
@@ -26,21 +28,20 @@ const LinkButton = ({
 
   let className = `${styles.link_button} ${sizeClass}`;
 
-  // render Link with next link if the href start with / to prevent page reload
-  if (href && href.startsWith("/")) {
-    return (
-      <Link href={href} className={className}>
-        {children}
-      </Link>
-    );
-  }
-
-  // render normal Link with the a tag for external links
-  if (href) {
+  // render normal Link if standard === true
+  if (href && standard) {
     return (
       <a href={href} className={className}>
         {children}
       </a>
+    );
+  }
+
+  if (href) {
+    return (
+      <Link href={href} className={className}>
+        {children}
+      </Link>
     );
   }
 

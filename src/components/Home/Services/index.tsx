@@ -5,18 +5,16 @@ import React from "react";
 import Section from "@/components/UI/Section";
 import SectionHeader from "@/components/UI/Section/SectionHeader";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-
 import { services } from "@/lib/services";
+import ServiceCard from "./ServiceCard";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
 import "./swiperStyles.css";
-
-// import required modules
-import { Pagination } from "swiper";
-import ServiceCard from "@/components/UI/ServiceCard";
 
 const Services = () => {
   const swiperOptions: any = {

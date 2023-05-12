@@ -22,7 +22,7 @@ const Hero = () => {
               </h2>
             </div>
             <p>Full Stack Web Developer specializing in MERN Stack & Next.js</p>
-            <LinkButton size="large" onClick={() => console.log("test")}>
+            <LinkButton size="large" href="/api/get-resume" standard>
               Get Resume <FileDownloadRoundedIcon />
             </LinkButton>
           </div>
