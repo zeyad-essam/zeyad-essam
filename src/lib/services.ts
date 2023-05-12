@@ -1,11 +1,11 @@
 export const services = [
   {
-    icon: "/icons/front-end-development.png",
+    icon: "/icons/services/front-end-development.png",
     title: "Frontend development",
     list: ["HTML", "CSS", "JavaScript", "React", "Redux"],
   },
   {
-    icon: "/icons/backend-development.png",
+    icon: "/icons/services/backend-development.png",
     title: "Backend development",
     list: [
       "Node.js",
@@ -16,7 +16,7 @@ export const services = [
     ],
   },
   {
-    icon: "/icons/maintenance.png",
+    icon: "/icons/services/maintenance.png",
     title: "Maintenance and Support",
     list: [
       "Performance optimization",
@@ -26,7 +26,7 @@ export const services = [
     ],
   },
   {
-    icon: "/icons/ecommerce.png",
+    icon: "/icons/services/ecommerce.png",
     title: "E-commerce Development",
     list: [
       "payment integration",
