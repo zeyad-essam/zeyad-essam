@@ -35,7 +35,7 @@
   left: 50%;
   width: 120px;
   height: 60px;
-  background-image: url(/menu-hover-shape.png);
+  background-image: url(/ui/menu-hover-shape.png);
   background-size: contain;
   background-repeat: no-repeat;
   visibility: hidden;
