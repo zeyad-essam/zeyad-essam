@@ -2,6 +2,10 @@
   position: static !important;
 }
 
+.projects_swiper .swiper-pagination {
+  bottom: -25px !important;
+}
+
 .projects_swiper .swiper-pagination-bullet {
   background-color: #fff;
 }

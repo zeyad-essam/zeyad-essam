@@ -1,6 +1,5 @@
 .swiper_wrapper {
   position: relative;
-  padding-bottom: 28px;
 }
 
 @media (max-width: 567px) {

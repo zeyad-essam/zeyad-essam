@@ -6,14 +6,14 @@ import Section from "@/components/UI/Section";
 import SectionHeader from "@/components/UI/Section/SectionHeader";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper";
+import { Pagination } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "./swiperStyles.css";
 
 import { ProjectData, FileData } from "@/lib/markdown";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../../UI/ProjectCard";
 
 import styles from "./Projects.module.css";
 
@@ -25,8 +25,7 @@ const Projects = ({
   const swiperOptions: any = {
     slidesPerView: 1,
     spaceBetween: 30,
-    freeMode: true,
-    modules: [FreeMode, Pagination],
+    modules: [Pagination],
     pagination: {
       dynamicBullets: true,
     },
