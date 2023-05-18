@@ -34,19 +34,22 @@ const MobileNavigation = ({ isOpen }: { isOpen: boolean }) => {
             <div className={styles.social_links}>
               <ul>
                 <li>
-                  <Link href="mailto:zeyadessam162@gmail.com">
+                  <a target="_blank" href="mailto:zeyadessam162@gmail.com">
                     <EmailIcon />
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="https://github.com/ziadessam162">
+                  <a target="_blank" href="https://github.com/ziadessam162">
                     <GitHubIcon />
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="https://www.linkedin.com/in/zeyadessam/">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/zeyadessam/"
+                  >
                     <LinkedInIcon />
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

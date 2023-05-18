@@ -115,10 +115,11 @@
 }
 
 @media (max-width: 991.8px) {
-  .header,
-  .header.sticky {
+  .header {
     position: fixed !important;
-    animation: none;
+    animation: none !important;
+    backdrop-filter: blur(16px);
+    background: rgba(37, 39, 52, 0.7);
   }
 
   .header_inner .hire_me {

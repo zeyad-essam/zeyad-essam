@@ -26,13 +26,7 @@ const ProjectCard = ({ project }: { project: FileData<ProjectData> }) => {
             {project.data.title}
           </Link>
         </h4>
-        <p>
-          {new Date(project.data.date).toLocaleDateString("en-US", {
-            year: "2-digit",
-            month: "2-digit",
-            day: "2-digit",
-          })}
-        </p>
+        <p>{new Date(project.data.date).toISOString().split("T")[0]}</p>
       </div>
     </div>
   );
