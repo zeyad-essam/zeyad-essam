@@ -1,0 +1,10 @@
+.blog {
+  position: relative;
+  padding-bottom: var(--section-padding);
+}
+
+@media (max-width: 567px) {
+  .blog {
+    padding-top: 24px;
+  }
+}

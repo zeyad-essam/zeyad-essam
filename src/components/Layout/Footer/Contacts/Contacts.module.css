@@ -1,0 +1,94 @@
+.contacts {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  row-gap: 30px;
+}
+
+.contacts .phone a,
+.contacts .email a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.social_links ul {
+  display: flex;
+  gap: 20px;
+}
+
+.contacts .phone a i,
+.contacts .email a i,
+.social_links ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.contacts .phone a i svg,
+.contacts .email a i svg,
+.social_links ul li a svg {
+  width: 24px;
+  height: 24px;
+  color: var(--text-color);
+  fill: var(--text-color);
+}
+
+.contacts .phone a:hover i,
+.contacts .email a:hover i,
+.social_links ul li a:hover {
+  background-color: var(--text-color);
+}
+
+.contacts .phone a:hover svg,
+.contacts .email a:hover svg,
+.social_links ul li a:hover svg {
+  color: var(--main-color-light);
+  fill: var(--main-color-light);
+}
+
+@media (max-width: 991.8px) {
+  .contacts {
+    grid-template-columns: auto auto;
+  }
+
+  .contacts .phone a i,
+  .contacts .email a i,
+  .social_links ul li a {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 767.8px) {
+  .contacts {
+    grid-template-columns: auto;
+  }
+
+  .contacts .phone a,
+  .contacts .email a {
+    font-size: 16px;
+  }
+
+  .contacts .phone a i,
+  .contacts .email a i,
+  .social_links ul li a {
+    width: 45px;
+    height: 45px;
+  }
+
+  .contacts .phone a i svg,
+  .contacts .email a i svg,
+  .social_links ul li a svg {
+    width: 18px;
+    height: 18px;
+  }
+}

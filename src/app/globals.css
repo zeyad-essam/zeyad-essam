@@ -22,10 +22,6 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-body {
-  height: 6000px;
-}
-
 :root {
   --main-color-dark: rgb(37, 39, 52);
   --main-color-medium: rgb(39, 41, 54);

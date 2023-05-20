@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import LinkButton from "@/components/UI/LinkButton";
 
 import PcNavigation from "./navigation/PcNavigation";
@@ -58,7 +57,7 @@ const Header = () => {
         <div className={styles.header_inner}>
           <div className={styles.logo_wrapper}>
             <Link href="/">
-              <Image src={Logo} alt="Zeyad Logp" />
+              <Logo />
             </Link>
           </div>
           <PcNavigation />

@@ -1,0 +1,87 @@
+.news_form {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: var(--section-padding);
+}
+
+.news_form .form_control {
+  position: relative;
+  flex: 1;
+}
+
+.form_control input {
+  width: 100%;
+  padding: 20px 40px;
+  font-size: 17px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 32.5px;
+  outline: none;
+  color: #fff;
+  background-color: transparent !important;
+  transition: all 0.3s ease;
+}
+
+.form_control input:focus {
+  background-color: transparent !important;
+  border-color: #fff;
+}
+
+.form_control .error_message {
+  position: absolute;
+  bottom: -24px;
+  left: 40px;
+  color: rgb(231, 71, 71);
+  font-size: 15px;
+}
+
+.news_form button {
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 32.5px;
+  font-size: 17px;
+  font-weight: 500;
+  border: 1px solid var(--main-color-light);
+  background: var(--main-color-light);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+@media (min-width: 992px) {
+  .news_form button:hover {
+    border-color: #fff;
+  }
+}
+
+@media (max-width: 991px) {
+  .news_form {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form_control input,
+  .news_form button {
+    padding: 17px 30px;
+  }
+}
+
+@media (max-width: 567px) {
+  .news_form {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .news_form .form_control {
+    width: 100%;
+  }
+
+  .form_control .error_message {
+    font-size: 14px;
+    bottom: -22px;
+  }
+}

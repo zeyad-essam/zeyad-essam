@@ -10,9 +10,10 @@
 }
 
 .cards_wrapper .card h3 {
-  font-family: var(--secondary-font-family);
-  margin-bottom: 55px;
+  margin-bottom: 35px;
   font-size: 24px;
+  font-family: var(--secondary-font-family);
+  font-weight: 500;
 }
 
 .cards_wrapper .card ul {
@@ -88,7 +89,8 @@
   }
 
   .cards_wrapper .card h3 {
-    font-size: 19px;
+    font-size: 18px;
+    margin-bottom: 25px;
   }
 
   .cards_wrapper .card ul {

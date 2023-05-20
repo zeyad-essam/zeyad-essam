@@ -1,11 +1,10 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import LinkButton from "@/components/UI/LinkButton";
 
 import FileDownloadRoundedIcon from "@mui/icons-material/FileDownloadRounded";
-import heroVector from "../../../../public/hero-vector.svg";
+import HeroVector from "../../../../public/hero-vector.svg";
 
 import styles from "./Hero.module.css";
 
@@ -28,13 +27,7 @@ const Hero = () => {
           </div>
           <div className={styles.hero_image}>
             <div className={styles.image_wrapper}>
-              <Image
-                alt="hero-image"
-                src={heroVector}
-                priority
-                fill
-                style={{ objectFit: "contain" }}
-              />
+              <HeroVector />
             </div>
           </div>
         </div>

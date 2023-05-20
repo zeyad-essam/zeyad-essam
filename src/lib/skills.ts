@@ -18,14 +18,6 @@ export const skillsAndTools = {
       icon: "/icons/skills/node-js.svg",
     },
     {
-      text: "HTML",
-      icon: "/icons/skills/html5.svg",
-    },
-    {
-      text: "CSS",
-      icon: "/icons/skills/css3.svg",
-    },
-    {
       text: "Sass",
       icon: "/icons/skills/sass.svg",
     },
@@ -44,10 +36,6 @@ export const skillsAndTools = {
       icon: "/icons/skills/github.svg",
     },
     {
-      text: "Git",
-      icon: "/icons/skills/git.svg",
-    },
-    {
       text: "Vercel",
       icon: "/icons/skills/vercel.svg",
     },
@@ -58,10 +46,6 @@ export const skillsAndTools = {
     {
       text: "Figma",
       icon: "/icons/skills/figma.svg",
-    },
-    {
-      text: "Npm",
-      icon: "/icons/skills/npm.svg",
     },
     {
       text: "Canva",

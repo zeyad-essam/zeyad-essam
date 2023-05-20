@@ -1,0 +1,41 @@
+.copy_right {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+}
+
+.copy_right .copy_right_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy_right_inner .logo_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.copy_right_inner .logo_wrapper a {
+  display: inline-flex;
+  width: 125px;
+}
+
+.copy_right_inner .logo_wrapper a img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 991.8px) {
+  .copy_right .logo_wrapper a {
+    width: 110px;
+  }
+}
+
+@media (max-width: 567px) {
+  .copy_right .copy_right_inner {
+    justify-content: center;
+  }
+
+  .copy_right .logo_wrapper {
+    display: none;
+  }
+}
