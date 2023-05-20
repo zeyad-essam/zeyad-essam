@@ -42,17 +42,19 @@
   fill: var(--text-color);
 }
 
-.contacts .phone a:hover i,
-.contacts .email a:hover i,
-.social_links ul li a:hover {
-  background-color: var(--text-color);
-}
+@media (min-width: 1200px) {
+  .contacts .phone a:hover i,
+  .contacts .email a:hover i,
+  .social_links ul li a:hover {
+    background-color: var(--text-color);
+  }
 
-.contacts .phone a:hover svg,
-.contacts .email a:hover svg,
-.social_links ul li a:hover svg {
-  color: var(--main-color-light);
-  fill: var(--main-color-light);
+  .contacts .phone a:hover svg,
+  .contacts .email a:hover svg,
+  .social_links ul li a:hover svg {
+    color: var(--main-color-light);
+    fill: var(--main-color-light);
+  }
 }
 
 @media (max-width: 991.8px) {

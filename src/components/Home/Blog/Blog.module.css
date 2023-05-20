@@ -3,6 +3,12 @@
   padding-bottom: var(--section-padding);
 }
 
+.blog .view_all {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 567px) {
   .blog {
     padding-top: 24px;

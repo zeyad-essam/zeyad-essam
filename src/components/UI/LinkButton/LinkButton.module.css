@@ -40,8 +40,9 @@
 @media (max-width: 567px) {
   .link_button.md {
     height: 50px;
-    padding: 0 20px;
+    padding: 0 24px;
     border-radius: 25px;
+    font-size: 16px;
   }
 }
 

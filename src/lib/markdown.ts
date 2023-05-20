@@ -15,6 +15,7 @@ export interface BlogData {
   title: string;
   slug: string;
   date: string;
+  thumbnail: string;
   author: string;
   category: string;
   tags: string[];
@@ -25,10 +26,13 @@ export interface FileData<Type> {
   content: string;
 }
 
-export function getMarkdownFilesData<Type extends { date?: string }>(
-  folder: string,
-  limit?: number
-): FileData<Type>[] {
+export function getMarkdownFilesData<Type extends { date?: string }>({
+  folder,
+  limit,
+}: {
+  folder: string;
+  limit?: number;
+}): FileData<Type>[] {
   try {
     // The path for the content directory which holds the markdown folders
     const contentDirectory = path.join(process.cwd(), "src", "content", folder);
