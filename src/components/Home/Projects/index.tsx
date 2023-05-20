@@ -12,16 +12,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./swiperStyles.css";
 
-import { ProjectData, FileData } from "@/lib/markdown";
+import { ProjectData } from "@/lib/markdown";
 import ProjectCard from "../../UI/ProjectCard";
 
 import styles from "./Projects.module.css";
 
-const Projects = ({
-  projectsData,
-}: {
-  projectsData: FileData<ProjectData>[];
-}) => {
+const Projects = ({ projectsData }: { projectsData: ProjectData[] }) => {
   const swiperOptions: any = {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -43,7 +39,7 @@ const Projects = ({
       <div className={styles.swiper_wrapper}>
         <Swiper className="projects_swiper" {...swiperOptions}>
           {projectsData.map((project) => (
-            <SwiperSlide key={project.data.title}>
+            <SwiperSlide key={project.title}>
               <ProjectCard project={project} />
             </SwiperSlide>
           ))}

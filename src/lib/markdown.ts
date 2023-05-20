@@ -32,31 +32,31 @@ export function getMarkdownFilesData<Type extends { date?: string }>({
 }: {
   folder: string;
   limit?: number;
-}): FileData<Type>[] {
+}): Type[] {
   try {
     // The path for the content directory which holds the markdown folders
     const contentDirectory = path.join(process.cwd(), "src", "content", folder);
     // A list of the file names for the given folder
     const files = fs.readdirSync(contentDirectory);
 
-    let filesData: FileData<Type>[] = [];
+    let filesData: Type[] = [];
     // An array of the data and content for each file from the markdown folder
     files.forEach((file) => {
       const fileContent = fs.readFileSync(
         path.join(contentDirectory, file),
         "utf-8"
       );
-      const { data, content } = matter(fileContent);
+      const { data } = matter(fileContent);
 
-      filesData.push({ data, content } as FileData<Type>);
+      filesData.push(data as Type);
     });
 
     // If every object from the filesData contains a date sort the files data in descending order (most recent first)
-    if (filesData.every((item) => item.data.date !== undefined)) {
+    if (filesData.every((item) => item.date !== undefined)) {
       filesData.sort((a, b) => {
-        if (a.data.date && b.data.date) {
-          const dateA = new Date(a.data.date).getTime();
-          const dateB = new Date(b.data.date).getTime();
+        if (a.date && b.date) {
+          const dateA = new Date(a.date).getTime();
+          const dateB = new Date(b.date).getTime();
           return dateB - dateA;
         } else {
           return 0;

@@ -4,14 +4,14 @@ import React from "react";
 
 import SectionHeader from "@/components/UI/Section/SectionHeader";
 
-import { FileData, BlogData } from "@/lib/markdown";
+import { BlogData } from "@/lib/markdown";
 
 import BlogPosts from "@/components/UI/BlogPosts";
 import LinkButton from "@/components/UI/LinkButton";
 
 import styles from "./Blog.module.css";
 
-const Blog = ({ blogData }: { blogData: FileData<BlogData>[] }) => {
+const Blog = ({ blogData }: { blogData: BlogData[] }) => {
   return (
     <section className={styles.blog}>
       <div className="container">

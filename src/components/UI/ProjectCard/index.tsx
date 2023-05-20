@@ -1,32 +1,27 @@
 import React from "react";
 import Link from "next/link";
 
-import { FileData, ProjectData } from "@/lib/markdown";
+import { ProjectData } from "@/lib/markdown";
 
 import styles from "./ProjectCard.module.css";
 
-const ProjectCard = ({ project }: { project: FileData<ProjectData> }) => {
+const ProjectCard = ({ project }: { project: ProjectData }) => {
   return (
     <div className={styles.project_card}>
-      <Link
-        className={styles.image_box}
-        href={`/projects/${project.data.slug}`}
-      >
+      <Link className={styles.image_box} href={`/projects/${project.slug}`}>
         <div className={styles.background_overlay}></div>
         <div className={styles.background_image}>
-          <img src={project.data.thumbnail} alt="project thumbnail" />
+          <img src={project.thumbnail} alt="project thumbnail" />
         </div>
         <div className={styles.project_image}>
-          <img src={project.data.thumbnail} alt="project_thumbnail" />
+          <img src={project.thumbnail} alt="project_thumbnail" />
         </div>
       </Link>
       <div className={styles.content}>
         <h4>
-          <Link href={`/projects/${project.data.slug}`}>
-            {project.data.title}
-          </Link>
+          <Link href={`/projects/${project.slug}`}>{project.title}</Link>
         </h4>
-        <p>{new Date(project.data.date).toISOString().split("T")[0]}</p>
+        <p>{new Date(project.date).toISOString().split("T")[0]}</p>
       </div>
     </div>
   );
