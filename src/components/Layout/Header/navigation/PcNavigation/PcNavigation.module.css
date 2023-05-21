@@ -24,7 +24,6 @@
   font-size: 0.96rem;
   font-weight: 500;
   font-family: var(--secondary-font-family);
-  color: var(--text-color-light);
 }
 
 .pc_navigation ul li a::before {
@@ -41,11 +40,6 @@
   background-repeat: no-repeat;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.5s ease;
-}
-
-.pc_navigation ul li a:hover {
-  color: var(--text-color);
   transition: all 0.5s ease;
 }
 

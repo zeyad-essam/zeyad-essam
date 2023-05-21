@@ -28,11 +28,11 @@ main {
 }
 
 :root {
-  --main-color-dark: rgb(37, 39, 52);
-  --main-color-medium: rgb(39, 41, 54);
-  --main-color-light: rgb(42, 44, 57);
-  --text-color: #f4f0ff;
-  --text-color-light: #c3c5ce;
+  --main-color-dark: rgb(40, 50, 61);
+  --main-color-medium: rgb(42, 53, 64);
+  --main-color-light: rgb(46, 58, 70);
+  --text-color: #fff;
+  --text-color-light: #dadce3;
   --border-color: rgba(255, 255, 255, 0.2);
   --font-family: "Poppins", sans-serif;
   --secondary-font-family: "JetBrains Mono", monospace;
