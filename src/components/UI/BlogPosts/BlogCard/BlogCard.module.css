@@ -9,6 +9,8 @@
 .blog_card .image_wrapper {
   width: 230px;
   aspect-ratio: 16 / 9;
+  border-radius: 2px;
+  overflow: hidden;
 }
 
 .blog_card .image_wrapper a {
@@ -38,9 +40,16 @@
   gap: 15px;
 }
 
+.content_wrapper .information .post_meta {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .content_wrapper .information .post_meta .read_time {
   color: var(--text-color-light);
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .content_wrapper .information h4 {
@@ -86,11 +95,6 @@
   .blog_card {
     padding: 30px 25px;
     border-radius: 4px;
-  }
-
-  .blog_card .image_wrapper {
-    border-radius: 4px;
-    overflow: hidden;
   }
 
   .blog_card .content_wrapper {
