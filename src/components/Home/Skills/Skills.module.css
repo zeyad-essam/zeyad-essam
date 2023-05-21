@@ -50,17 +50,6 @@
     background-color: var(--main-color-dark);
     outline: none;
   }
-
-  .card ul li .image_wrapper,
-  .card ul li span {
-    opacity: 0.6;
-    transition: opacity 0.4s ease;
-  }
-
-  .card ul li:hover .image_wrapper,
-  .card ul li:hover span {
-    opacity: 1;
-  }
 }
 
 @media (max-width: 1200px) {

@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   gap: 35px;
+  border-radius: 5px;
 }
 
 .blog_card .image_wrapper {
