@@ -4,7 +4,7 @@ import React from "react";
 
 import SectionHeader from "@/components/UI/Section/SectionHeader";
 
-import { BlogData } from "@/lib/markdown";
+import { BlogData } from "@/types";
 
 import BlogPosts from "@/components/UI/BlogPosts";
 import LinkButton from "@/components/UI/LinkButton";

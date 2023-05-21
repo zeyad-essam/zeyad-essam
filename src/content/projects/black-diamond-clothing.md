@@ -3,14 +3,14 @@ title: Black diamong clothing
 slug: black-diamong-clothing
 date: 2022-09-01
 duration: 3 weeks
-thumbnail: /projects/black-diamond/full-page.png
+thumbnail: https://res.cloudinary.com/drru4lsys/image/upload/v1684629964/black-diamond/full-page.png
 projectImages:
-  - /projects/black-diamond/home-page.png
-  - /projects/black-diamond/products-page.png
-  - /projects/black-diamond/product-page.png
-  - /projects/black-diamond/account-page.png
-  - /projects/black-diamond/cart-page.png
-  - /projects/black-diamond/checkout-page.png
+  - https://res.cloudinary.com/drru4lsys/image/upload/v1684629937/black-diamond/home-page.png
+  - https://res.cloudinary.com/drru4lsys/image/upload/v1684629937/black-diamond/products-page.png
+  - https://res.cloudinary.com/drru4lsys/image/upload/v1684629938/black-diamond/product-page.png
+  - https://res.cloudinary.com/drru4lsys/image/upload/v1684629934/black-diamond/account-page.png
+  - https://res.cloudinary.com/drru4lsys/image/upload/v1684629936/black-diamond/cart-page.png
+  - https://res.cloudinary.com/drru4lsys/image/upload/v1684629935/black-diamond/checkout-page.png
 ---
 
  <h1>Black Diamond E-commerce</h1>

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import { BlogData } from "@/lib/markdown";
+import { BlogData } from "@/types";
 import LinkButton from "../../LinkButton";
 
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";

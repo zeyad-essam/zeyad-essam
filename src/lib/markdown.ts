@@ -2,30 +2,6 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-export interface ProjectData {
-  title: string;
-  slug: string;
-  date: string;
-  duration: string;
-  thumbnail: string;
-  projectImages: string[];
-}
-
-export interface BlogData {
-  title: string;
-  slug: string;
-  date: string;
-  thumbnail: string;
-  author: string;
-  category: string;
-  tags: string[];
-}
-
-export interface FileData<Type> {
-  data: Type;
-  content: string;
-}
-
 export function getMarkdownFilesData<Type extends { date?: string }>({
   folder,
   limit,

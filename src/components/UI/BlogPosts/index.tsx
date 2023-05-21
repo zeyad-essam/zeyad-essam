@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./BlogPosts.module.css";
-import { BlogData } from "@/lib/markdown";
+import { BlogData } from "@/types";
 import BlogCard from "./BlogCard";
 
 const BlogPosts = ({ blogData }: { blogData: BlogData[] }) => {

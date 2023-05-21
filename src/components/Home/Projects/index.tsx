@@ -12,7 +12,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./swiperStyles.css";
 
-import { ProjectData } from "@/lib/markdown";
+import { ProjectData } from "@/types";
 import ProjectCard from "../../UI/ProjectCard";
 
 import styles from "./Projects.module.css";

@@ -1,16 +1,3 @@
----
-title: "Best Practices for Achieving Scalability in MERN Stack Applications"
-slug: mern-scalability-best-practices
-date: 2023-05-20
-author: Zeyad Essam
-thumbnail: /blog/mern.jpg
-category: Web development
-tags:
-  - MERN
-  - Scalability
-  - Web Development
----
-
 <h1>Best Practices for Achieving Scalability in MERN Stack Applications</h1>
 
 <p>

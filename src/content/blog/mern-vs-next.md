@@ -1,16 +1,3 @@
----
-title: "MERN Stack vs. Next.js: Choosing the Right Framework for Your Project"
-slug: mern-vs-nextjs
-date: 2023-05-10
-author: Zeyad Essam
-thumbnail: /blog/mern-nextjs.jpg
-category: Web development
-tags:
-  - MERN
-  - Next.js
-  - Web Development
----
-
 <h1>MERN Stack vs. Next.js: Choosing the Right Framework for Your Project</h1>
 
 <p>In the world of web development, choosing the right framework is crucial for the success of your project. With numerous options available, it can be overwhelming to decide which one suits your needs best. When it comes to building modern web applications using JavaScript, two popular choices are the MERN stack and Next.js.</p>

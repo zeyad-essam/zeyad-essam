@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import { ProjectData } from "@/lib/markdown";
+import { ProjectData } from "@/types";
 
 import styles from "./ProjectCard.module.css";
 

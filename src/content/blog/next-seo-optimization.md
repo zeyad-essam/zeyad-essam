@@ -1,16 +1,3 @@
----
-title: "Next.js and SEO Optimization: Boosting Search Engine Visibility for Your Web Applications"
-slug: next-seo-optimization
-date: 2023-05-16
-author: Zeyad Essam
-thumbnail: /blog/next-js.jpg
-category: Web development
-tags:
-  - Next.js
-  - SEO Optimization
-  - Web Development
----
-
 <h1>Next.js and SEO Optimization: Boosting Search Engine Visibility for Your Web Applications</h1>
 
 <p>
