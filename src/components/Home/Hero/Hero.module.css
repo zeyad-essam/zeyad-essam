@@ -110,9 +110,7 @@
 
 @media (max-width: 1200px) {
   .hero {
-    height: 100vh;
-    max-height: 750px;
-    min-height: 600px;
+    height: 700px;
   }
 
   .hero_inner .hero_text h3 {
@@ -130,10 +128,6 @@
 }
 
 @media (max-width: 991.8px) {
-  .hero {
-    height: 100vh;
-  }
-
   .hero_inner {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
@@ -154,10 +148,15 @@
   }
 }
 
+@media (max-width: 767px) {
+  .hero {
+    height: 100vh;
+  }
+}
+
 @media (max-width: 567px) {
   .hero {
     min-height: 600px;
-    max-height: 1000px;
     padding-bottom: 35px;
   }
 
