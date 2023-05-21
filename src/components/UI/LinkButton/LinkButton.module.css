@@ -15,12 +15,28 @@
   z-index: 9;
   overflow: hidden;
   cursor: pointer;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .link_button.sm {
   height: 65px;
   padding: 0 40px;
   border-radius: 32.5px;
+}
+
+@media (max-width: 1200px) {
+  .link_button.sm {
+    height: 55px;
+    padding: 0 35px;
+  }
+}
+
+@media (max-width: 567px) {
+  .link_button.sm {
+    height: 45px;
+    padding: 0 30px;
+  }
 }
 
 .link_button.md {
@@ -47,8 +63,8 @@
 }
 
 .link_button.lg {
-  height: 80px;
-  padding: 0 60px;
+  height: 70px;
+  padding: 0 50px;
   border-radius: 42.5px;
 }
 
@@ -60,11 +76,11 @@
   }
 }
 
-@media (max-width: 678px) {
+@media (max-width: 767px) {
   .link_button.lg {
-    height: 55px;
-    padding: 0 30px;
-    border-radius: 27.5px;
+    height: 60px;
+    padding: 0 35px;
+    border-radius: 30px;
   }
 }
 

@@ -23,6 +23,7 @@
   text-transform: uppercase;
   font-size: 0.96rem;
   font-weight: 500;
+  font-family: var(--secondary-font-family);
   color: var(--text-color-light);
 }
 

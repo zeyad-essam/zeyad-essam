@@ -21,16 +21,6 @@ const Footer = () => {
         <Contacts />
       </Section>
       <CopyRight />
-      <div className={`${styles.footer_shape} ${styles.footer_shape_left}`}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div className={`${styles.footer_shape} ${styles.footer_shape_right}`}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
     </footer>
   );
 };

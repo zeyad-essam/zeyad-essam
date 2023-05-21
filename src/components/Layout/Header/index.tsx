@@ -63,7 +63,7 @@ const Header = () => {
           <PcNavigation />
           <MobileNavigation isOpen={openNavigation} />
           <div className={styles.hire_me}>
-            <LinkButton href="mailto:zeyadessam162@gmail.com">
+            <LinkButton href="mailto:zeyadessam162@gmail.com" standard>
               Hire Me <KeyboardDoubleArrowRightIcon />
             </LinkButton>
           </div>

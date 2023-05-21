@@ -9,7 +9,7 @@
   top: 0;
   width: 100%;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-  animation: fadeInDown 0.7s cubic-bezier(0.2, 1, 0.22, 1);
+  animation: fadeInDown 0.9s cubic-bezier(0.2, 1, 0.22, 1);
   backdrop-filter: blur(16px);
   background: rgba(37, 39, 52, 0.7);
 }
@@ -19,12 +19,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-@media (min-width: 992px) {
-  .header.sticky .header_inner {
-    height: 100px;
-  }
 }
 
 .header_inner .logo_wrapper,
@@ -109,6 +103,10 @@
 }
 
 @media (min-width: 992px) {
+  .header.sticky .header_inner {
+    height: 100px;
+  }
+
   .mobile_menu_button {
     display: none;
   }
@@ -118,6 +116,11 @@
   .header {
     position: fixed !important;
     animation: none !important;
+    background-color: transparent;
+    transition: background 0.5s ease;
+  }
+
+  .header.sticky {
     backdrop-filter: blur(16px);
     background: rgba(37, 39, 52, 0.7);
   }

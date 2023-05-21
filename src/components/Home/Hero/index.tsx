@@ -4,7 +4,6 @@ import React from "react";
 import LinkButton from "@/components/UI/LinkButton";
 
 import FileDownloadRoundedIcon from "@mui/icons-material/FileDownloadRounded";
-import HeroVector from "../../../../public/hero-vector.svg";
 
 import styles from "./Hero.module.css";
 
@@ -25,22 +24,16 @@ const Hero = () => {
               Get Resume <FileDownloadRoundedIcon />
             </LinkButton>
           </div>
-          <div className={styles.hero_image}>
-            <div className={styles.image_wrapper}>
-              <HeroVector />
-            </div>
-          </div>
         </div>
       </div>
-      <div className={`${styles.hero_shape} ${styles.hero_shape_top}`}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div className={`${styles.hero_shape} ${styles.hero_shape_bottom}`}>
-        <span></span>
-        <span></span>
-        <span></span>
+      <div className={styles.background}>
+        <div className={styles.overlay}></div>
+        <div className={styles.image}>
+          <img
+            src="https://res.cloudinary.com/drru4lsys/image/upload/v1684694996/hero-background.jpg"
+            alt="hero background"
+          />
+        </div>
       </div>
     </section>
   );
