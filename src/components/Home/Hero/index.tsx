@@ -30,7 +30,7 @@ const Hero = () => {
         <div className={styles.overlay}></div>
         <div className={styles.image}>
           <img
-            src="https://res.cloudinary.com/drru4lsys/image/upload/v1684694996/hero-background.jpg"
+            src="https://res.cloudinary.com/drru4lsys/image/upload/v1684710158/hero-background.jpg"
             alt="hero background"
           />
         </div>
