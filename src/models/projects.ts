@@ -1,8 +1,8 @@
 import { models, model, Schema } from "mongoose";
 
-import { BlogData } from "@/types";
+import { ProjectData } from "@/types";
 
-const PostSchema: Schema = new Schema<BlogData>({
+const ProjectSchema: Schema = new Schema<ProjectData>({
   title: {
     type: String,
     required: true,
@@ -17,24 +17,20 @@ const PostSchema: Schema = new Schema<BlogData>({
     type: Date,
     required: true,
   },
+  duration: {
+    type: String,
+    required: true,
+  },
   thumbnail: {
     type: String,
     required: true,
   },
-  author: {
-    type: String,
-    required: true,
-  },
-  readTime: {
-    type: String,
-    required: true,
-  },
-  tags: {
+  projectImages: {
     type: [String],
     required: true,
   },
 });
 
-const Post = models.Post || model<BlogData>("Post", PostSchema);
+const Project = models.Project || model<ProjectData>("Project", ProjectSchema);
 
-export default Post;
+export default Project;

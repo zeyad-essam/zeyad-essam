@@ -4,18 +4,18 @@ import Skills from "@/components/Home/Skills";
 import Projects from "@/components/Home/Projects";
 import Blog from "@/components/Home/Blog";
 
-import { getMarkdownFilesData } from "@/lib/markdown";
 import dbConnect from "@/lib/dbConnect";
 import Post from "@/models/posts";
+import Project from "@/models/projects";
 
 import { BlogData, ProjectData } from "@/types";
 
 export default async function Home() {
-  const projectsData = getMarkdownFilesData<ProjectData>({
-    folder: "projects",
-  });
-
   await dbConnect();
+
+  const projectsData: ProjectData[] = JSON.parse(
+    JSON.stringify(await Project.find({}).sort({ date: -1 }))
+  );
 
   const blogData: BlogData[] = JSON.parse(
     JSON.stringify(await Post.find({}).sort({ date: -1 }).limit(4))

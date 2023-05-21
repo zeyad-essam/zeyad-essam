@@ -19,10 +19,8 @@ const BlogCard = ({ blog }: { blog: BlogData }) => {
       <div className={styles.content_wrapper}>
         <div className={styles.information}>
           <div className={styles.post_meta}>
-            <span>{blog.category}</span> -{" "}
-            <span className={styles.blog_date}>
-              {new Date(blog.date).toISOString().split("T")[0]}
-            </span>
+            <span>{new Date(blog.date).toISOString().split("T")[0]}</span> -{" "}
+            <span className={styles.read_time}>{blog.readTime} read</span>
           </div>
           <h4>
             <Link href={`/blog/${blog.slug}`}>{blog.title}</Link>

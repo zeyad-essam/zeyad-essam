@@ -1,19 +1,3 @@
----
-title: Thomas men's clothing
-slug: thomas-clothing
-date: 2023-02-01
-duration: 4 weeks
-thumbnail: https://res.cloudinary.com/drru4lsys/image/upload/v1684629877/thomas/full-page.png
-projectImages:
-  - https://res.cloudinary.com/drru4lsys/image/upload/v1684629851/thomas/home-page.png
-  - https://res.cloudinary.com/drru4lsys/image/upload/v1684629842/thomas/products-page.png
-  - https://res.cloudinary.com/drru4lsys/image/upload/v1684629839/thomas/product-page.png
-  - https://res.cloudinary.com/drru4lsys/image/upload/v1684629842/thomas/product-filters.png
-  - https://res.cloudinary.com/drru4lsys/image/upload/v1684629834/thomas/cart-page.png
-  - https://res.cloudinary.com/drru4lsys/image/upload/v1684629856/thomas/login-page.png
-  - https://res.cloudinary.com/drru4lsys/image/upload/v1684629859/thomas/signup-page.png
----
-
 <h1>Thomas Men's Clothing</h1>
 <p>The Thomas Men's Clothing project is a full-stack e-commerce project that allowed me to gain valuable skills and experience in a variety of areas in the field of full-stack development. Throughout the development of this project, I had the opportunity to work with cutting-edge technologies and implement key features that contribute to the success of an e-commerce platform.</p>
 <h2>Skills and Technologies Used</h2>

@@ -4,14 +4,14 @@ export interface BlogData {
   date: Date;
   thumbnail: string;
   author: string;
-  category: string;
+  readTime: string;
   tags: string[];
 }
 
 export interface ProjectData {
   title: string;
   slug: string;
-  date: string;
+  date: Date;
   duration: string;
   thumbnail: string;
   projectImages: string[];

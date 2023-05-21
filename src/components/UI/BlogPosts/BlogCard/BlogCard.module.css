@@ -38,7 +38,7 @@
   gap: 15px;
 }
 
-.content_wrapper .information .post_meta .blog_date {
+.content_wrapper .information .post_meta .read_time {
   color: var(--text-color-light);
   font-size: 15px;
 }
@@ -86,6 +86,11 @@
   .blog_card {
     padding: 30px 25px;
     border-radius: 4px;
+  }
+
+  .blog_card .image_wrapper {
+    border-radius: 4px;
+    overflow: hidden;
   }
 
   .blog_card .content_wrapper {
