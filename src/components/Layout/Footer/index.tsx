@@ -11,7 +11,7 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <Section>
+      <Section dark>
         <SectionHeader
           tag="Get Latest Updates"
           title="Subscribe For Newsletter"

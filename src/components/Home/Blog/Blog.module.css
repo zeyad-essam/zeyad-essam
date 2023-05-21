@@ -1,6 +1,7 @@
 .blog {
   position: relative;
   padding-bottom: var(--section-padding);
+  background-color: var(--main-color-light);
 }
 
 .blog .view_all {

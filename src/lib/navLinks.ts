@@ -5,18 +5,18 @@ export const navLinks = [
   },
   {
     text: "About me",
-    href: "/",
+    href: "/about-me",
   },
   {
     text: "Blog",
-    href: "/",
+    href: "/blog",
   },
   {
     text: "Projects",
-    href: "/",
+    href: "/projects",
   },
   {
     text: "Contact",
-    href: "/",
+    href: "/contact",
   },
 ];

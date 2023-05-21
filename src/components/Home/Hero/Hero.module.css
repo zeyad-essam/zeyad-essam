@@ -4,6 +4,7 @@
   min-height: 700px;
   background-color: var(--main-color-dark);
   padding-top: var(--header-height);
+  margin-top: calc(-1 * var(--header-height));
   overflow: hidden;
   z-index: 1;
 }
