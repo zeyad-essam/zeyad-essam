@@ -24,7 +24,7 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
       "Accept-Ranges": "bytes",
       "Content-Length": chunkSize,
       "Content-Type": "application/pdf",
-      "Content-Disposition": "attachment; zeyad-essam-resume.pdf",
+      "Content-Disposition": "attachment; filename=zeyad-essam-resume.pdf",
     };
 
     res.writeHead(206, headers);
@@ -33,7 +33,7 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
     const headers = {
       "Content-Length": fileSize,
       "Content-Type": "application/pdf",
-      "Content-Disposition": "attachment; zeyad-essam-resume.pdf",
+      "Content-Disposition": "attachment; filename=zeyad-essam-resume.pdf",
     };
 
     res.writeHead(200, headers);
