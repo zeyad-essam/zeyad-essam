@@ -2,14 +2,12 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import LinkButton from "@/components/UI/LinkButton";
 
 import PcNavigation from "./navigation/PcNavigation";
 import MobileNavigation from "./navigation/MobileNavigation";
 
 import Logo from "../../../../public/logo.svg";
-
-import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import MessageBubble from "../../../../public/message-bubble.svg";
 
 import styles from "./Header.module.css";
 
@@ -63,9 +61,10 @@ const Header = () => {
           <PcNavigation />
           <MobileNavigation isOpen={openNavigation} />
           <div className={styles.hire_me}>
-            <LinkButton href="mailto:zeyadessam162@gmail.com" standard>
-              Hire Me <KeyboardDoubleArrowRightIcon />
-            </LinkButton>
+            <a href="/api/get-resume">
+              <MessageBubble />
+              <span>HIRE ME</span>
+            </a>
           </div>
           <button
             onClick={toggleNavigationHandler}

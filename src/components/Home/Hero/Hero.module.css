@@ -165,6 +165,7 @@
 @media (max-width: 767px) {
   .hero {
     height: 100vh;
+    background-image: url("/hero-poly-mobile.svg");
   }
 }
 
@@ -190,6 +191,10 @@
 
   .hero_inner .hero_text p {
     font-size: 16px;
+  }
+
+  .social_links {
+    margin-bottom: 8px;
   }
 
   .social_links ul li a {
