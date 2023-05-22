@@ -61,6 +61,10 @@
   line-height: 1.6;
 }
 
+.social_links {
+  margin-bottom: 8px;
+}
+
 .social_links ul {
   display: flex;
   justify-content: center;
@@ -191,10 +195,6 @@
 
   .hero_inner .hero_text p {
     font-size: 16px;
-  }
-
-  .social_links {
-    margin-bottom: 8px;
   }
 
   .social_links ul li a {

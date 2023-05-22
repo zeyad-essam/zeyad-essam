@@ -61,7 +61,7 @@ const Header = () => {
           <PcNavigation />
           <MobileNavigation isOpen={openNavigation} />
           <div className={styles.hire_me}>
-            <a href="/api/get-resume">
+            <a href="mailto:zeyadessam162@gmail.com">
               <MessageBubble />
               <span>HIRE ME</span>
             </a>

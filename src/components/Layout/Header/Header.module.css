@@ -44,7 +44,8 @@
 }
 
 .header_inner .hire_me {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header_inner .hire_me a {
