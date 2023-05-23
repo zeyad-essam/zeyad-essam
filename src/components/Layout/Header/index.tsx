@@ -6,6 +6,8 @@ import Link from "next/link";
 import PcNavigation from "./navigation/PcNavigation";
 import MobileNavigation from "./navigation/MobileNavigation";
 
+import { useNavigationEvent } from "@/lib/hooks/useNavigationEvent";
+
 import Logo from "../../../../public/logo.svg";
 import MessageBubble from "../../../../public/message-bubble.svg";
 
@@ -48,6 +50,10 @@ const Header = () => {
       document.body.style.overflow = "visible";
     };
   }, [openNavigation]);
+
+  useNavigationEvent(() => {
+    setOpenNavigation(false);
+  });
 
   return (
     <header className={`${styles.header} ${isSticky ? styles.sticky : ""}`}>

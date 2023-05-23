@@ -7,7 +7,7 @@ const SectionHeader = ({
   title,
   center,
 }: {
-  tag: string;
+  tag?: string;
   title: string;
   center?: boolean;
 }) => {
@@ -15,7 +15,7 @@ const SectionHeader = ({
     <header
       className={`${styles.section_header} ${center ? styles.center : ""}`}
     >
-      <span className={styles.section_tag}>{tag}</span>
+      {tag && <span className={styles.section_tag}>{tag}</span>}
       <h2>{title}</h2>
     </header>
   );

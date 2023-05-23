@@ -10,6 +10,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import UpworkIcon from "../../../../public/ui/upwork.svg";
 
+import { motion } from "framer-motion";
+
 import styles from "./Hero.module.css";
 
 const Hero = () => {
@@ -19,13 +21,42 @@ const Hero = () => {
         <div className={styles.hero_inner}>
           <div className={styles.hero_text}>
             <div className={styles.hero_name}>
-              <h3>Hello! I'm</h3>
-              <h2>
+              <motion.h3
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0, transition: { type: "tween" } }}
+              >
+                Hello! I'm
+              </motion.h3>
+              <motion.h2
+                initial={{ opacity: 0, y: 100 }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  transition: { delay: 0.1, type: "tween" },
+                }}
+              >
                 Zeyad <span>Essam</span>
-              </h2>
+              </motion.h2>
             </div>
-            <p>Full Stack Web Developer specializing in MERN Stack & Next.js</p>
-            <div className={styles.social_links}>
+            <motion.p
+              initial={{ opacity: 0, y: 100 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.2, type: "tween" },
+              }}
+            >
+              Full Stack Web Developer specializing in MERN Stack & Next.js
+            </motion.p>
+            <motion.div
+              className={styles.social_links}
+              initial={{ opacity: 0, y: 100 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.3, type: "tween" },
+              }}
+            >
               <ul>
                 <li>
                   <a target="_blank" href="mailto:zeyadessam162@gmail.com">
@@ -54,10 +85,19 @@ const Hero = () => {
                   </a>
                 </li>
               </ul>
-            </div>
-            <LinkButton size="large" href="/api/get-resume" standard>
-              Get Resume <FileDownloadRoundedIcon />
-            </LinkButton>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.4, type: "tween" },
+              }}
+            >
+              <LinkButton size="large" href="/api/get-resume" standard>
+                Get Resume <FileDownloadRoundedIcon />
+              </LinkButton>
+            </motion.div>
           </div>
         </div>
       </div>

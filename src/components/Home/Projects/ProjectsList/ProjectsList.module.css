@@ -1,0 +1,11 @@
+.projects_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+@media (max-width: 767px) {
+  .projects_list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import PageHeader from "@/components/UI/PageHeader";
 
 export const metadata = {
   title: "Contact Me",
@@ -6,7 +7,15 @@ export const metadata = {
 };
 
 const ContactPage = () => {
-  return <div>ContactPage</div>;
+  return (
+    <>
+      <PageHeader
+        links={[{ text: "Home", href: "/" }]}
+        activeLink="Contact"
+        pageTitle="Contact Me"
+      />
+    </>
+  );
 };
 
 export default ContactPage;

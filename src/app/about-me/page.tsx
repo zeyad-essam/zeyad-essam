@@ -1,3 +1,4 @@
+import PageHeader from "@/components/UI/PageHeader";
 import React from "react";
 
 export const metadata = {
@@ -6,7 +7,15 @@ export const metadata = {
 };
 
 const AboutMePage = () => {
-  return <div>AboutMePage</div>;
+  return (
+    <>
+      <PageHeader
+        links={[{ text: "Home", href: "/" }]}
+        activeLink="About"
+        pageTitle="About Me"
+      />
+    </>
+  );
 };
 
 export default AboutMePage;

@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useRef, useEffect } from "react";
 import Link from "next/link";
 
 import { BlogData } from "@/types";
@@ -8,9 +10,32 @@ import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArro
 
 import styles from "./BlogCard.module.css";
 
+import { motion, useInView, useAnimation } from "framer-motion";
+
+const cardVariants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, type: "tween" } },
+  hidden: { opacity: 0, y: 100 },
+};
+
 const BlogCard = ({ blog }: { blog: BlogData }) => {
+  const controls = useAnimation();
+  const cardRef = useRef(null);
+  const isInView = useInView(cardRef, { once: true });
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    }
+  }, [controls, isInView]);
+
   return (
-    <div className={styles.blog_card}>
+    <motion.div
+      ref={cardRef}
+      animate={isInView ? "visible" : ""}
+      initial="hidden"
+      variants={cardVariants}
+      className={styles.blog_card}
+    >
       <div className={styles.image_wrapper}>
         <Link href={`/blog/${blog.slug}`}>
           <img src={blog.thumbnail} alt="blog post thumbnail" />
@@ -32,7 +57,7 @@ const BlogCard = ({ blog }: { blog: BlogData }) => {
           </LinkButton>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
