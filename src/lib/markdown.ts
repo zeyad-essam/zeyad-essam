@@ -50,3 +50,25 @@ export function getMarkdownFilesData<Type extends { date?: Date }>({
     return [];
   }
 }
+
+export const getMarkdownFileContent = ({
+  folder,
+  slug,
+}: {
+  folder: string;
+  slug: string;
+}) => {
+  const contentDirectory = path.join(
+    process.cwd(),
+    "src",
+    "content",
+    folder,
+    `${slug}.md`
+  );
+  // A list of the file names for the given folder
+  const fileContent = fs.readFileSync(contentDirectory, "utf-8");
+
+  const { content } = matter(fileContent);
+
+  return content;
+};

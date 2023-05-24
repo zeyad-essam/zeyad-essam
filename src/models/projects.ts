@@ -29,6 +29,14 @@ const ProjectSchema: Schema = new Schema<ProjectData>({
     type: [String],
     required: true,
   },
+  techStack: {
+    type: String,
+    required: true,
+  },
+  url: {
+    type: String,
+    required: true,
+  },
 });
 
 const Project = models.Project || model<ProjectData>("Project", ProjectSchema);

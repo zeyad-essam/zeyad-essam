@@ -1,0 +1,7 @@
+.image_swiper {
+  border-radius: 5px;
+}
+
+.image_swiper .swiper-pagination-bullet {
+  background-color: rgb(40, 50, 61);
+}

@@ -1,0 +1,59 @@
+.markdown-wrapper {
+  color: var(--text-color-light);
+}
+
+.markdown-wrapper h1 {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.markdown-wrapper h2 {
+  font-size: 34px;
+  font-weight: 500;
+  margin: 35px 0;
+}
+
+.markdown-wrapper p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.markdown-wrapper ul,
+.markdown-wrapper ol {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 20px;
+  margin-left: 18px;
+}
+
+.markdown-wrapper ul {
+  list-style: circle;
+}
+
+.markdown-wrapper ul li {
+  line-height: 1.7;
+}
+
+@media (max-width: 767px) {
+  .markdown-wrapper h1 {
+    font-size: 38px;
+    margin-bottom: 25px;
+  }
+
+  .markdown-wrapper h2 {
+    font-size: 28px;
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 567px) {
+  .markdown-wrapper h1 {
+    font-size: 30px;
+  }
+
+  .markdown-wrapper h2 {
+    font-size: 22px;
+  }
+}

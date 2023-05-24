@@ -32,7 +32,7 @@ main {
   --main-color-medium: rgb(42, 53, 64);
   --main-color-light: rgb(46, 58, 70);
   --text-color: #fff;
-  --text-color-light: #dadce3;
+  --text-color-light: #e7e9ee;
   --border-color: rgba(255, 255, 255, 0.2);
   --font-family: "Poppins", sans-serif;
   --secondary-font-family: "JetBrains Mono", monospace;

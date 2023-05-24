@@ -1,4 +1,4 @@
- <h1>Black Diamond E-commerce</h1>
+ <h1><a href="https://black-diamond-store.vercel.app/" target="_blank">Black Diamond E-commerce</a></h1>
   <p>Black Diamond is a dynamic and responsive e-commerce website for clothing, developed using Next.js. It showcases a professional user interface, optimized for an enhanced user experience.</p>
   <h2>Key Features</h2>
   <ul>

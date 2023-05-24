@@ -15,6 +15,8 @@ export interface ProjectData {
   duration: string;
   thumbnail: string;
   projectImages: string[];
+  techStack: string;
+  url: string;
 }
 
 export interface MarkDownData<Type> {

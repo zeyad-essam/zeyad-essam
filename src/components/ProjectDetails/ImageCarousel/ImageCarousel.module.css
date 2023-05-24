@@ -1,0 +1,17 @@
+.swiper_wrapper {
+  padding: 30px;
+  background-color: var(--main-color-dark);
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .swiper_wrapper {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+.image_wrapper {
+  position: relative;
+  aspect-ratio: 1920 / 961;
+}

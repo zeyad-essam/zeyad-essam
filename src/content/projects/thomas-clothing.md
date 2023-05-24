@@ -1,4 +1,4 @@
-<h1>Thomas Men's Clothing</h1>
+<h1><a href="https://thomas-clothing.herokuapp.com/" target="_blank">Thomas Men's Clothing</a></h1>
 <p>The Thomas Men's Clothing project is a full-stack e-commerce project that allowed me to gain valuable skills and experience in a variety of areas in the field of full-stack development. Throughout the development of this project, I had the opportunity to work with cutting-edge technologies and implement key features that contribute to the success of an e-commerce platform.</p>
 <h2>Skills and Technologies Used</h2>
 <p>During the development of Thomas Men's Clothing, I utilized various skills and technologies:</p>

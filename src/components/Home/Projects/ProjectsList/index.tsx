@@ -9,7 +9,7 @@ const ProjectsList = ({ projectsData }: { projectsData: ProjectData[] }) => {
   return (
     <div className={styles.projects_list}>
       {projectsData.map((project) => (
-        <div>
+        <div key={project.slug}>
           <ProjectCard key={project.slug} project={project} />
         </div>
       ))}
