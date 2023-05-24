@@ -10,7 +10,7 @@ import { Pagination } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import "./swiperStyles.css";
+import "./projectsSwiperStyles.css";
 
 import { ProjectData } from "@/types";
 import ProjectCard from "../../UI/ProjectCard";

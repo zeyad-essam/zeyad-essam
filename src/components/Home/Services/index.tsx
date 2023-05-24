@@ -14,7 +14,7 @@ import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import "./swiperStyles.css";
+import "./serviceSwiperStyles.css";
 
 const Services = () => {
   const swiperOptions: any = {

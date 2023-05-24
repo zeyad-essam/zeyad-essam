@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import "./swiperStyles.css";
+import "./imageSwiperStyles.css";
 
 import { Pagination } from "swiper";
 
