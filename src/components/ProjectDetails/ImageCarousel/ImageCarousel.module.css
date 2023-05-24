@@ -4,6 +4,11 @@
   margin-bottom: 40px;
 }
 
+.image_wrapper {
+  position: relative;
+  aspect-ratio: 1920 / 961;
+}
+
 @media (max-width: 767px) {
   .swiper_wrapper {
     padding: 15px;
@@ -11,7 +16,8 @@
   }
 }
 
-.image_wrapper {
-  position: relative;
-  aspect-ratio: 1920 / 961;
+@media (max-width: 567px) {
+  .swiper_wrapper {
+    padding: 10px;
+  }
 }

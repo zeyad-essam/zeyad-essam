@@ -31,7 +31,9 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
   try {
     await dbConnect();
 
-    projectData = await Project.findOne({ slug: params.slug });
+    projectData = JSON.parse(
+      JSON.stringify(await Project.findOne({ slug: params.slug }))
+    );
 
     markDownFileContent = getMarkdownFileContent({
       folder: "projects",

@@ -6,8 +6,6 @@ import Link from "next/link";
 import PcNavigation from "./navigation/PcNavigation";
 import MobileNavigation from "./navigation/MobileNavigation";
 
-import { useNavigationEvent } from "@/lib/hooks/useNavigationEvent";
-
 import Logo from "../../../../public/logo.svg";
 import MessageBubble from "../../../../public/message-bubble.svg";
 
@@ -20,6 +18,10 @@ const Header = () => {
 
   const toggleNavigationHandler = () => {
     setOpenNavigation((prevValue) => !prevValue);
+  };
+
+  const closeNavigationHandler = () => {
+    setOpenNavigation(false);
   };
 
   const handleScroll = () => {
@@ -51,10 +53,6 @@ const Header = () => {
     };
   }, [openNavigation]);
 
-  useNavigationEvent(() => {
-    setOpenNavigation(false);
-  });
-
   return (
     <header className={`${styles.header} ${isSticky ? styles.sticky : ""}`}>
       <div className="container">
@@ -65,7 +63,10 @@ const Header = () => {
             </Link>
           </div>
           <PcNavigation />
-          <MobileNavigation isOpen={openNavigation} />
+          <MobileNavigation
+            isOpen={openNavigation}
+            onClose={closeNavigationHandler}
+          />
           <div className={styles.hire_me}>
             <a href="mailto:zeyadessam162@gmail.com">
               <MessageBubble />

@@ -1,0 +1,40 @@
+.project_information {
+  padding: 60px 40px;
+  background-color: var(--main-color-dark);
+  height: fit-content;
+}
+
+.project_information h3 {
+  font-size: 24px;
+  font-family: var(--secondary-font-family);
+  margin-bottom: 25px;
+}
+
+.project_information ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project_information ul li {
+  padding: 25px 30px 25px 30px;
+  background-color: var(--main-color-light);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project_information ul li a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.project_information ul li a:hover {
+  color: var(--text-color);
+}
+
+@media (max-width: 567px) {
+  .project_information {
+    padding: 50px 30px;
+  }
+}

@@ -24,83 +24,81 @@
 
 <p>To begin my journey, I started by acquiring a solid foundation in web development. I dedicated time to learn HTML, CSS, and JavaScript, which are the building blocks of any web application. Once I was comfortable with the basics, I moved on to exploring the MERN stack and Next.js.</p>
 
-<h3>1. HTML</h3>
+<h3>1. HTML:</h3>
 
 <p>HTML is the backbone of every web page. I learned the essential HTML tags, semantic elements, and structuring the content of web pages.</p>
 
-<p>Resource: [HTML Course](insert_html_course_link_here)</p>
+<p><strong>Html course: </strong> <a href="https://www.youtube.com/watch?v=6QAELgirvjs&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji">Learn HTML In Arabic 2021 By Osama El Zero</a></p>
 
-<h3>2. CSS</h3>
+<h3>2. CSS:</h3>
 
 <p>CSS is responsible for styling and layout of web pages. I gained knowledge of selectors, properties, and techniques for creating visually appealing designs.</p>
 
-<p>Resource: [CSS Course](insert_css_course_link_here)</p>
+<p><strong>Css course: </strong> <a href="https://www.youtube.com/watch?v=X1ulCwyhCVM&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe">Learn Css In Arabic 2021 By Osama El Zero</a></p>
 
-<h3>3. Sass</h3>
+<h3>3. Sass:</h3>
 
 <p>Sass is a powerful CSS preprocessor that enables advanced features like variables, mixins, and nesting. I utilized Sass to streamline my CSS workflow and make it more maintainable.</p>
 
-<p>Resource: [Sass Course](insert_sass_course_link_here)</p>
+<p><strong>Css course: </strong> <a href="https://www.youtube.com/watch?v=Di_RlcpkpN4&list=PLDoPjvoNmBAzlpyFHOaB3b-eubmF0TAV2">Learn SASS In Arabic 2021 By Osama El Zero</a></p>
 
-<h3>4. Bootstrap</h3>
+<h3>4. Bootstrap:</h3>
 
 <p>Bootstrap is a popular CSS framework that provides pre-designed components and responsive layouts. I learned how to leverage Bootstrap to build sleek and responsive web pages.</p>
 
-<p>Resource: [Bootstrap Course](insert_bootstrap_course_link_here)</p>
+<p><strong>Bootstrap course: </strong> <a href="https://www.udemy.com/course/the-complete-bootstrap-5-course-for-beginners-step-by-step/">Bootstrap 5 Course - The Complete Guide Step by Step (2023) By Fatah Gabrial</a></p>
 
-<h3>5. JavaScript</h3>
+<h3>5. JavaScript:</h3>
 
 <p>JavaScript is the programming language of the web. I learned the fundamentals of JavaScript, including variables, data types, control flow, functions, and DOM manipulation.</p>
 
-<p>Resource: [JavaScript Course](insert_javascript_course_link_here)</p>
+<p><strong>JavaScript course: </strong> <a href="https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/">JavaScript - The Complete Guide 2023 (Beginner + Advanced) By Maximilian Schwarzmuller</a></p>
 
-<h3>6. TypeScript</h3>
+<h3>6. TypeScript:</h3>
 
 <p>TypeScript is a statically typed superset of JavaScript that brings type safety and enhanced tooling to JavaScript development. I learned TypeScript to write more robust and scalable applications.</p>
 
-<p>Resource: [TypeScript Course](insert_typescript_course_link_here)</p>
+<p><strong>TypeScript course: </strong> <a href="https://www.udemy.com/course/understanding-typescript/">Understanding TypeScript By Maximilian Schwarzmuller</a></p>
 
-<h3>7. React.js</h3>
+<h3>7. React.js:</h3>
 
 <p>React.js is a popular JavaScript library for building user interfaces. I delved into React.js to create reusable UI components and manage application state using features like hooks and context.</p>
 
-<p>Resource: [React.js Course](insert_reactjs_course_link_here)</p>
+<p><strong>React course: </strong> <a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/">React - The Complete Guide (incl Hooks, React Router, Redux) By Maximilian Schwarzmuller</a></p>
 
-<h3>8. Node.js</h3>
+<h3>8. Node.js:</h3>
 
 <p>Node.js is a JavaScript runtime environment that allows running JavaScript on the server-side. I learned Node.js to build server-side applications and utilize JavaScript for full stack development.</p>
 
-<p>Resource: [Node.js Course](insert_nodejs_course_link_here)</p>
+<p><strong>Node.Js course: </strong> <a href="https://www.udemy.com/course/nodejs-the-complete-guide/">NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno) By Maximilian Schwarzmuller</a></p>
 
-<h3>9. Express.js</h3>
+<h3>9. Express.js:</h3>
 
 <p>Express.js is a fast and minimalist web framework for Node.js. I explored Express.js to build robust and scalable server-side applications, create RESTful APIs, and handle routing.</p>
 
-<p>Resource: [Express.js Course](insert_expressjs_course_link_here)</p>
-
-<h3>10. MongoDB</h3>
+<h3>10. MongoDB:</h3>
 
 <p>MongoDB is a popular NoSQL database that provides flexibility and scalability. I gained proficiency in MongoDB to store and manage data for my web applications.</p>
 
-<p>Resource: [MongoDB Course](insert_mongodb_course_link_here)</p>
+<p><strong>MongoDb course: </strong> <a href="https://www.udemy.com/course/mongodb-the-complete-developers-guide/">MongoDB - The Complete Developer's Guide 2023 by Maximilian Schwarzmuller</a></p>
 
-<h3>11. Next.js</h3>
+<h3>11. Next.js:</h3>
 
 <p>Next.js is a powerful React framework that enables server-side rendering and building scalable web applications. I discovered Next.js to create dynamic and performant web pages.</p>
 
-<p>Resource: [Next.js Course](insert_nextjs_course_link_here)</p>
+<p><strong>Next.Js course: </strong> <a href="https://www.udemy.com/course/nextjs-react-the-complete-guide/">Next.js & React - The Complete Guide By Maximilian Schwarzmuller</a></p>
 
-<h3>12. Firebase</h3>
+<h3>12. Firebase:</h3>
 
 <p>Firebase is a comprehensive development platform that offers authentication, real-time data syncing, cloud storage, and more. I explored Firebase to add advanced functionalities to my web applications.</p>
 
-<p>Resource: [Firebase Course](insert_firebase_course_link_here)</p>
+<p><strong>Firebase course: </strong> <a href="https://www.udemy.com/course/firebase-course/">Firebase In Depth By Angular University</a></p>
 
-<h3>13. Git</h3>
+<h3>13. Git:</h3>
 
 <p>Git is a distributed version control system used by developers for tracking changes in code and collaborating on projects. I learned Git to manage my source code effectively.</p>
 
-<p>Resource: [Git Course](insert_git_course_link_here)</p>
+<p><strong>Git & Github course: </strong> <a href="https://www.udemy.com/course/git-github-practical-guide/">Git & GitHub - The Practical Guide</a></p>
 
 <h2>Future Goals</h2>
 

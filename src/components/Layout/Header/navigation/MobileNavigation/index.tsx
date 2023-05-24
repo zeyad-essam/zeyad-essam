@@ -10,7 +10,13 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 import styles from "./MobileNavigation.module.css";
 
-const MobileNavigation = ({ isOpen }: { isOpen: boolean }) => {
+const MobileNavigation = ({
+  isOpen,
+  onClose,
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+}) => {
   return (
     <>
       <Portal>
@@ -23,7 +29,7 @@ const MobileNavigation = ({ isOpen }: { isOpen: boolean }) => {
                 {navLinks.map((link) => (
                   <li key={link.text}>
                     <div className="container">
-                      <Link key={link.text} href={link.href}>
+                      <Link onClick={onClose} key={link.text} href={link.href}>
                         {link.text}
                       </Link>
                     </div>

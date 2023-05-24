@@ -31,25 +31,25 @@
 
 <p>Both the MERN stack and Next.js are popular choices for JavaScript-based web development. Let's compare them in different aspects:</p>
 
-<h3>Architecture</h3>
+<h3>Architecture:</h3>
 
 <p>The MERN stack follows a traditional full-stack architecture, where you have a separate frontend (React) and backend (Express.js and Node.js) components. This architecture allows for more flexibility in terms of choosing different tools and libraries for each layer.</p>
 
 <p>Next.js, on the other hand, provides a more opinionated architecture that is tightly integrated with React. It simplifies the development process by providing a unified framework for both frontend and backend development.</p>
 
-<h3>Rendering Strategy</h3>
+<h3>Rendering Strategy:</h3>
 
 <p>The MERN stack primarily focuses on client-side rendering. React handles rendering components on the client-side, which means the initial page load is relatively lightweight. However, it can result in slower initial page load times and lower SEO performance, as search engines may have difficulty indexing the content.</p>
 
 <p>Next.js, as mentioned earlier, offers server-side rendering (SSR) and static site generation (SSG) as built-in features. This allows for faster initial page loads, better SEO performance, and improved user experience. Next.js is a great choice for content-rich websites or applications that require real-time data.</p>
 
-<h3>Scalability</h3>
+<h3>Scalability:</h3>
 
 <p>Both the MERN stack and Next.js are capable of building scalable applications, but they differ in their approaches. The MERN stack provides more flexibility in scaling each component individually. You can scale the backend separately from the frontend and choose different hosting solutions based on your needs.</p>
 
 <p>Next.js simplifies scalability by providing a built-in framework for handling server-side rendering and automatic code splitting. It abstracts away many of the scalability concerns and allows you to focus more on building features rather than managing infrastructure.</p>
 
-<h3>Ecosystem and Community Support</h3>
+<h3>Ecosystem and Community Support:</h3>
 
 <p>Both the MERN stack and Next.js have large and active communities with plenty of resources and libraries available. However, the MERN stack has been around for a longer time and has a more mature ecosystem. It has a wide range of libraries and tools to choose from, making it easier to find solutions to specific problems.</p>
 

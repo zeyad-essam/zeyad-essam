@@ -1,7 +1,12 @@
 .image_swiper {
-  border-radius: 5px;
+  border-radius: 0px;
+}
+
+.image_swiper .swiper-pagination {
+  bottom: 5px !important;
 }
 
 .image_swiper .swiper-pagination-bullet {
-  background-color: rgb(40, 50, 61);
+  background-color: #000;
+  outline: 1px solid #fff;
 }
