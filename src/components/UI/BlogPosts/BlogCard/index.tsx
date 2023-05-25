@@ -36,7 +36,7 @@ const BlogCard = ({ blog }: { blog: BlogData }) => {
             href={`/blog/${blog.slug}`}
             areaLabel={blog.title}
           >
-            Read More <KeyboardDoubleArrowRightIcon style={{ fontSize: 24 }} />
+            Read Post <KeyboardDoubleArrowRightIcon style={{ fontSize: 24 }} />
           </LinkButton>
         </div>
       </div>
