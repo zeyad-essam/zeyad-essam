@@ -14,7 +14,7 @@ const BlogCard = ({ blog }: { blog: BlogData }) => {
   return (
     <div className={styles.blog_card}>
       <div className={styles.image_wrapper}>
-        <Link href={`/blog/${blog.slug}`}>
+        <Link href={`/blog/${blog.slug}`} aria-label={blog.title}>
           <img src={blog.thumbnail} alt="blog post thumbnail" />
         </Link>
       </div>
@@ -25,11 +25,17 @@ const BlogCard = ({ blog }: { blog: BlogData }) => {
             <span className={styles.read_time}>{blog.readTime} read</span>
           </div>
           <h4>
-            <Link href={`/blog/${blog.slug}`}>{blog.title}</Link>
+            <Link href={`/blog/${blog.slug}`} aria-label={blog.title}>
+              {blog.title}
+            </Link>
           </h4>
         </div>
         <div>
-          <LinkButton size="medium" href={`/blog/${blog.slug}`}>
+          <LinkButton
+            size="medium"
+            href={`/blog/${blog.slug}`}
+            areaLabel={blog.title}
+          >
             Read More <KeyboardDoubleArrowRightIcon style={{ fontSize: 24 }} />
           </LinkButton>
         </div>

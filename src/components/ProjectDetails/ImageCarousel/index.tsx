@@ -16,7 +16,11 @@ import Image from "next/image";
 const ImageCarousel = ({ images }: { images: string[] }) => {
   return (
     <div className={styles.swiper_wrapper}>
-      <Swiper pagination={true} modules={[Pagination]} className="image_swiper">
+      <Swiper
+        pagination={{ clickable: true }}
+        modules={[Pagination]}
+        className="image_swiper"
+      >
         {images.map((image) => (
           <SwiperSlide key={image}>
             <div className={styles.image_wrapper}>

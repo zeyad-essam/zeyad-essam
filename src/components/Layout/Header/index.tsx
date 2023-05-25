@@ -58,7 +58,7 @@ const Header = () => {
       <div className="container">
         <div className={styles.header_inner}>
           <div className={styles.logo_wrapper}>
-            <Link href="/">
+            <Link href="/" area-label="Home Page">
               <Logo />
             </Link>
           </div>
@@ -68,7 +68,10 @@ const Header = () => {
             onClose={closeNavigationHandler}
           />
           <div className={styles.hire_me}>
-            <a href="mailto:zeyadessam162@gmail.com">
+            <a
+              href="mailto:zeyadessam162@gmail.com"
+              area-label="Email to zeyadessam162@gmail.com"
+            >
               <MessageBubble />
               <span>HIRE ME</span>
             </a>

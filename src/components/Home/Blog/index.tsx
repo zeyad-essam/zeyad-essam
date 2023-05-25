@@ -18,7 +18,11 @@ const Blog = ({ blogData }: { blogData: BlogData[] }) => {
         <SectionHeader tag="Blog Posts" title="Latest Blog Posts" center />
         <BlogPosts blogData={blogData} />
         <div className={styles.view_all}>
-          <LinkButton href="/blog" size="medium">
+          <LinkButton
+            href="/blog"
+            size="medium"
+            areaLabel="View all blog posts"
+          >
             View All Posts
           </LinkButton>
         </div>

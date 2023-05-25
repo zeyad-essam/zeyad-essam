@@ -11,7 +11,7 @@ const PcNavigation = () => {
       <ul>
         {navLinks.map((link) => (
           <li key={link.text}>
-            <Link key={link.text} href={link.href}>
+            <Link key={link.text} href={link.href} area-label={link.text}>
               {link.text}
             </Link>
           </li>

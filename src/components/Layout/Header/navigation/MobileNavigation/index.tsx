@@ -29,7 +29,12 @@ const MobileNavigation = ({
                 {navLinks.map((link) => (
                   <li key={link.text}>
                     <div className="container">
-                      <Link onClick={onClose} key={link.text} href={link.href}>
+                      <Link
+                        onClick={onClose}
+                        key={link.text}
+                        href={link.href}
+                        aria-label={link.text}
+                      >
                         {link.text}
                       </Link>
                     </div>
@@ -40,12 +45,20 @@ const MobileNavigation = ({
             <div className={styles.social_links}>
               <ul>
                 <li>
-                  <a target="_blank" href="mailto:zeyadessam162@gmail.com">
+                  <a
+                    target="_blank"
+                    href="mailto:zeyadessam162@gmail.com"
+                    aria-label="Email to zeyadessam162@gmail.com"
+                  >
                     <EmailIcon />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://github.com/ziadessam162">
+                  <a
+                    target="_blank"
+                    href="https://github.com/ziadessam162"
+                    aria-label="Visit my github profile page"
+                  >
                     <GitHubIcon />
                   </a>
                 </li>
@@ -53,6 +66,7 @@ const MobileNavigation = ({
                   <a
                     target="_blank"
                     href="https://www.linkedin.com/in/zeyadessam/"
+                    aria-label="Visit my linked in profile page"
                   >
                     <LinkedInIcon />
                   </a>

@@ -21,6 +21,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-title" content="Zeyad" />
         <meta name="application-name" content="Zeyad" />
+        <meta name="theme-color" content="#28323d" />
         <link rel="manifest" href="/site.webmanifest"></link>
       </head>
       <body className={inter.className}>

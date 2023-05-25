@@ -14,7 +14,7 @@ const Contacts = () => {
   return (
     <div className={styles.contacts}>
       <div className={styles.phone}>
-        <a href="tel:+201143210887">
+        <a href="tel:+201143210887" area-label="Phone +201143210887">
           <i>
             <PhoneIcon />
           </i>
@@ -22,7 +22,10 @@ const Contacts = () => {
         </a>
       </div>
       <div className={styles.email}>
-        <a href="mailto:zeyadessam162@gmail.com">
+        <a
+          href="mailto:zeyadessam162@gmail.com"
+          aria-label="Email to zeyadessam162@gmail.com"
+        >
           <i>
             <EmailIcon />
           </i>
@@ -32,7 +35,11 @@ const Contacts = () => {
       <div className={styles.social_links}>
         <ul>
           <li>
-            <a target="_blank" href="https://github.com/ziadessam162">
+            <a
+              target="_blank"
+              href="https://github.com/ziadessam162"
+              aria-label="Visit my github profile page"
+            >
               <GitHubIcon />
             </a>
           </li>
@@ -40,12 +47,17 @@ const Contacts = () => {
             <a
               target="_blank"
               href="https://www.upwork.com/freelancers/~016c139fa3effee5af"
+              aria-label="Visit my upwork profile page"
             >
               <UpworkIcon />
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://www.linkedin.com/in/zeyadessam/">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/zeyadessam/"
+              aria-label="Visit my linked in profile page"
+            >
               <LinkedInIcon />
             </a>
           </li>

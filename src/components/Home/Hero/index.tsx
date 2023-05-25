@@ -59,12 +59,20 @@ const Hero = () => {
             >
               <ul>
                 <li>
-                  <a target="_blank" href="mailto:zeyadessam162@gmail.com">
+                  <a
+                    target="_blank"
+                    href="mailto:zeyadessam162@gmail.com"
+                    aria-label="Email to zeyadessam162@gmail.com"
+                  >
                     <EmailIcon />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://github.com/ziadessam162">
+                  <a
+                    target="_blank"
+                    href="https://github.com/ziadessam162"
+                    aria-label="Visit my github profile page"
+                  >
                     <GitHubIcon />
                   </a>
                 </li>
@@ -72,6 +80,7 @@ const Hero = () => {
                   <a
                     target="_blank"
                     href="https://www.linkedin.com/in/zeyadessam/"
+                    aria-label="Visit my linked in profile page"
                   >
                     <LinkedInIcon />
                   </a>
@@ -80,6 +89,7 @@ const Hero = () => {
                   <a
                     target="_blank"
                     href="https://www.upwork.com/freelancers/~016c139fa3effee5af"
+                    aria-label="Visit my upwork profile page"
                   >
                     <UpworkIcon />
                   </a>
@@ -94,7 +104,12 @@ const Hero = () => {
                 transition: { delay: 0.4, type: "tween" },
               }}
             >
-              <LinkButton size="large" href="/api/get-resume" standard>
+              <LinkButton
+                size="large"
+                href="/api/get-resume"
+                standard
+                areaLabel="Download my resume"
+              >
                 Get Resume <FileDownloadRoundedIcon />
               </LinkButton>
             </motion.div>

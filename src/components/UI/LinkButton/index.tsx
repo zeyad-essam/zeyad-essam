@@ -9,12 +9,14 @@ const LinkButton = ({
   onClick,
   size,
   standard,
+  areaLabel,
 }: {
   children: React.ReactNode;
   href?: string;
   onClick?: () => void;
   size?: "small" | "medium" | "large";
   standard?: boolean;
+  areaLabel?: string;
 }) => {
   let sizeClass: string;
 
@@ -31,7 +33,11 @@ const LinkButton = ({
   // render normal Link if standard === true
   if (href && standard) {
     return (
-      <a href={href} className={className}>
+      <a
+        href={href}
+        className={className}
+        area-label={areaLabel ? areaLabel : null}
+      >
         {children}
       </a>
     );
@@ -39,7 +45,11 @@ const LinkButton = ({
 
   if (href) {
     return (
-      <Link href={href} className={className}>
+      <Link
+        href={href}
+        className={className}
+        area-label={areaLabel ? areaLabel : null}
+      >
         {children}
       </Link>
     );

@@ -13,7 +13,7 @@ const CopyRight = () => {
       <div className={`${styles.copy_right_inner} container`}>
         <div>&copy; 2023 Made by Zeyad Essam</div>
         <div className={styles.logo_wrapper}>
-          <Link href="/">
+          <Link href="/" area-label="Home page">
             <Logo />
           </Link>
         </div>

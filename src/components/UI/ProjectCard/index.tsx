@@ -8,7 +8,11 @@ import styles from "./ProjectCard.module.css";
 const ProjectCard = ({ project }: { project: ProjectData }) => {
   return (
     <div className={styles.project_card}>
-      <Link className={styles.image_box} href={`/projects/${project.slug}`}>
+      <Link
+        className={styles.image_box}
+        href={`/projects/${project.slug}`}
+        aria-label={`${project.title} details`}
+      >
         <div className={styles.background_overlay}></div>
         <div className={styles.background_image}>
           <img src={project.thumbnail} alt="project thumbnail" />
@@ -19,7 +23,12 @@ const ProjectCard = ({ project }: { project: ProjectData }) => {
       </Link>
       <div className={styles.content}>
         <h4>
-          <Link href={`/projects/${project.slug}`}>{project.title}</Link>
+          <Link
+            href={`/projects/${project.slug}`}
+            aria-label={`${project.title} details`}
+          >
+            {project.title}
+          </Link>
         </h4>
         <p>{new Date(project.date).toISOString().split("T")[0]}</p>
       </div>
