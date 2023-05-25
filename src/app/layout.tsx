@@ -22,7 +22,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Zeyad" />
         <meta name="application-name" content="Zeyad" />
         <meta name="theme-color" content="#28323d" />
-        <link rel="manifest" href="/site.webmanifest"></link>
+        <link rel="manifest" href="/manifest.json"></link>
       </head>
       <body className={inter.className}>
         <div id="overlays"></div>
